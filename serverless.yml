@@ -56,12 +56,12 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  hello:
+  orders:
     events:
       - http:
           method: post
           path: orders
-    handler: handler.hello
+    handler: orders.handler
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
