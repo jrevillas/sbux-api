@@ -19,6 +19,7 @@ service: sbux-api # NOTE: update this with your service name
 
 provider:
   name: aws
+  region: eu-west-1
   runtime: nodejs8.10
 
 # you can overwrite defaults here
@@ -56,6 +57,10 @@ provider:
 
 functions:
   hello:
+    events:
+      - http:
+          method: post
+          path: orders
     handler: handler.hello
 
 #    The following are a few example events you can configure
