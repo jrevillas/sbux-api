@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jrevillas/sbux-api#readme",
   "dependencies": {
-    "ajv": "^6.5.4"
+    "ajv": "^6.5.4",
+    "string-hash": "^1.1.3"
   }
 }
