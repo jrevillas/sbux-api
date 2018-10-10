@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jrevillas/sbux-api/issues"
   },
-  "homepage": "https://github.com/jrevillas/sbux-api#readme"
+  "homepage": "https://github.com/jrevillas/sbux-api#readme",
+  "dependencies": {
+    "ajv": "^6.5.4"
+  }
 }
