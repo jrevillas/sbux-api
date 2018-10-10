@@ -1,6 +1,7 @@
 module.exports = body => {
   try {
-    return JSON.parse(body);
+    const parsed = JSON.parse(body);
+    return typeof(parsed) === 'object' && parsed !== null ? parsed : undefined;
   } catch (err) {
     return undefined;
   }
