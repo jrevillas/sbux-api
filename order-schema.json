@@ -1,0 +1,13 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "custom": "string",
+    "decaf": "string",
+    "drink": "string",
+    "milk": "string",
+    "shots": "string",
+    "size": "string",
+    "syrup": "string"
+  },
+  "type": "object"
+}
