@@ -9,5 +9,8 @@
     "size": {"type": "string"},
     "syrup": {"type": "string"}
   },
+  "required": [
+    "custom", "decaf", "drink", "milk", "shots", "size", "syrup"
+  ],
   "type": "object"
 }
