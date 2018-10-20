@@ -1,0 +1,20 @@
+[
+  {"custom": "", "decaf": "", "drink": "CHTL", "milk": "", "price": "350", "shots": "", "size": "tall", "syrup": ""},
+  {"custom": "", "decaf": "", "drink": "CHTL", "milk": "", "price": "410", "shots": "", "size": "grande", "syrup": ""},
+  {"custom": "", "decaf": "", "drink": "CHTL", "milk": "", "price": "460", "shots": "", "size": "venti", "syrup": ""},
+  {"custom": "", "decaf": "", "drink": "CHTL", "milk": "S", "price": "390", "shots": "", "size": "tall", "syrup": ""},
+  {"custom": "", "decaf": "", "drink": "CHTL", "milk": "S", "price": "450", "shots": "", "size": "grande", "syrup": ""},
+  {"custom": "", "decaf": "", "drink": "CHTL", "milk": "S", "price": "500", "shots": "", "size": "venti", "syrup": ""},
+  {"custom": "-H2O-", "decaf": "", "drink": "CHTL", "milk": "S", "price": "390", "shots": "", "size": "tall", "syrup": ""},
+  {"custom": "-H2O-", "decaf": "", "drink": "CHTL", "milk": "S", "price": "450", "shots": "", "size": "grande", "syrup": ""},
+  {"custom": "-H2O-", "decaf": "", "drink": "CHTL", "milk": "S", "price": "500", "shots": "", "size": "venti", "syrup": ""},
+  {"custom": "-H2O-", "decaf": "", "drink": "CHTL", "milk": "", "price": "350", "shots": "", "size": "tall", "syrup": ""},
+  {"custom": "-H20-", "decaf": "", "drink": "CHTL", "milk": "", "price": "410", "shots": "", "size": "grande", "syrup": ""},
+  {"custom": "-H2O-", "decaf": "", "drink": "CHTL", "milk": "", "price": "460", "shots": "", "size": "venti", "syrup": ""},
+  {"custom": "H", "decaf": "", "drink": "CHTL", "milk": "", "price": "350", "shots": "", "size": "tall", "syrup": ""},
+  {"custom": "H", "decaf": "", "drink": "CHTL", "milk": "", "price": "410", "shots": "", "size": "grande", "syrup": ""},
+  {"custom": "H", "decaf": "", "drink": "CHTL", "milk": "", "price": "460", "shots": "", "size": "venti", "syrup": ""},
+  {"custom": "H", "decaf": "", "drink": "CHTL", "milk": "S", "price": "390", "shots": "", "size": "tall", "syrup": ""},
+  {"custom": "H", "decaf": "", "drink": "CHTL", "milk": "S", "price": "450", "shots": "", "size": "grande", "syrup": ""},
+  {"custom": "H", "decaf": "", "drink": "CHTL", "milk": "S", "price": "500", "shots": "", "size": "venti", "syrup": ""}
+]
