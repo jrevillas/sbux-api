@@ -1,7 +1,7 @@
 'use strict';
 
 const parseBody = require('./body-parser');
-const isOrderValid = require('./validator');
+const validateOrder = require('./validator');
 
 module.exports.handler = async (event, context) => {
   const parsedBody = parseBody(event.body);
@@ -11,7 +11,8 @@ module.exports.handler = async (event, context) => {
       statusCode: 400
     };
   }
-  if (!isOrderValid(parsedBody)) {
+  const order = validateOrder(parsedBody);
+  if (order === undefined) {
     return {
       body: '',
       statusCode: 400
