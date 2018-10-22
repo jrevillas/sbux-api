@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jrevillas/sbux-api#readme",
   "dependencies": {
     "ajv": "^6.5.4",
+    "aws-sdk": "^2.339.0",
     "string-hash": "^1.1.3"
   }
 }
