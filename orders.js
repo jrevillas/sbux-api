@@ -35,7 +35,7 @@ module.exports.handler = async (event, context) => {
       ShopId: {N: '0'}
     },
     ReturnConsumedCapacity: 'TOTAL',
-    TableName: 'StarbucksOrders'
+    TableName: 'SbuxOrders'
   };
   await dynamoDb.putItem(dynamoDbItem).promise()
   .then(data => console.log(data))
