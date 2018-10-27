@@ -3,7 +3,7 @@
 const aws = require('aws-sdk');
 const parseBody = require('./body-parser');
 const { isRandomMode, randomOrder, timestamp, toDynamoDbItem } = require('./utils');
-const uuid = require('uuid/v4');
+const { ulid } = require('ulid');
 const validateOrder = require('./validator');
 
 const dynamoDb = new aws.DynamoDB({
@@ -30,7 +30,7 @@ module.exports.handler = async (event, context) => {
   }
   const dynamoDbItem = {
     Item: {
-      Id: {S: uuid()},
+      Id: {S: ulid()},
       Information: toDynamoDbItem(order),
       Timestamp: {N: timestamp()}
     },
