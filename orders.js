@@ -36,7 +36,12 @@ module.exports.handler = async (event, context) => {
   try {
     authorizationCode = await processPayment({});
     console.log(`Authorization code: ${authorizationCode}`);
-  } catch(err) {}
+  } catch(err) {
+    return {
+      body: '',
+      statusCode: 400
+    };
+  }
   const dynamoDbItem = {
     Item: {
       Id: {S: ulid()},
