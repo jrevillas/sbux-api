@@ -10,6 +10,8 @@ const dynamoDb = new aws.DynamoDB({
   region: 'eu-west-1'
 });
 
+const dynamoDbTableName = process.env.DYNAMODB_TABLE_NAME;
+
 module.exports.handler = async (event, context) => {
   if (isRandomMode(event.queryStringParameters)) {
     event.body = randomOrder();
@@ -35,7 +37,7 @@ module.exports.handler = async (event, context) => {
       Timestamp: {N: timestamp()}
     },
     ReturnConsumedCapacity: 'TOTAL',
-    TableName: 'SbuxOrders'
+    TableName: dynamoDbTableName
   };
   await dynamoDb.putItem(dynamoDbItem).promise()
   .then(data => console.log(data))
