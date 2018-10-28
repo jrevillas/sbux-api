@@ -1,9 +1,11 @@
 'use strict';
 
 const aws = require('aws-sdk');
-const parseBody = require('./body-parser');
-const { isRandomMode, randomOrder, timestamp, toDynamoDbItem } = require('./utils');
 const { ulid } = require('ulid');
+
+const parseBody = require('./body-parser');
+const processPayment = require('./payments');
+const { isRandomMode, randomOrder, timestamp, toDynamoDbItem } = require('./utils');
 const validateOrder = require('./validator');
 
 const dynamoDb = new aws.DynamoDB({
@@ -30,6 +32,11 @@ module.exports.handler = async (event, context) => {
       statusCode: 400
     };
   }
+  let authorizationCode = null;
+  try {
+    authorizationCode = await processPayment({});
+    console.log(`Authorization code: ${authorizationCode}`);
+  } catch(err) {}
   const dynamoDbItem = {
     Item: {
       Id: {S: ulid()},
